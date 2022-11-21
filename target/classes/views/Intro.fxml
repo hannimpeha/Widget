@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F3F3F3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="118.0" minWidth="0.0" prefHeight="150.0" prefWidth="1280.0">
+            <HBox alignment="TOP_CENTER" layoutX="177.0" layoutY="30.0" prefHeight="90.0" prefWidth="860.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="243.0" AnchorPane.topAnchor="30.0">
+                <Text fx:id="gloadtext" fill="#00bbde" fontSmoothingType="LCD" stroke="WHITE" strokeType="OUTSIDE" styleClass="centered" text="GLOAD for" textAlignment="CENTER" wrappingWidth="401.13671875" HBox.hgrow="NEVER">
+                    <font>
+                        <Font name="Times New Roman Bold" size="68.0" />
+                    </font>
+                </Text>
+            </HBox>
+        </AnchorPane>
+
+        <Separator nodeOrientation="LEFT_TO_RIGHT" prefHeight="23.0" prefWidth="1263.0" />
+
+        <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="1280.0" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" layoutX="275.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="640.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="21.0">
+                <ImageView fitHeight="60.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </ImageView>
+
+                <Text fill="#22286f" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to ****" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="30.0" />
+                    </font>
+                </Text>
+
+                <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In to Continue" textAlignment="CENTER">
+                    <font>
+                        <Font name="Impact" size="22.0" />
+                    </font>
+                </Text>
+
+                <AnchorPane prefHeight="344.0" prefWidth="640.0" style="-fx-background-color: #ffffff;">
+                    <TextField fx:id="user" layoutX="199.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="263.0" promptText="Username" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="71.0" />*
+
+                    <PasswordField fx:id="password" layoutX="201.0" layoutY="145.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="263.0" promptText="Password" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="176.0" AnchorPane.topAnchor="145.0" />
+
+                    <Text layoutX="199.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="152.291015625" AnchorPane.bottomAnchor="282.1064453125" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="288.708984375" AnchorPane.topAnchor="39.9599609375">
+                        <font>
+                            <Font name="Times New Roman Bold" size="18.0" />
+                        </font>
+                    </Text>
+
+                    <Text layoutX="198.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="eDir password:" AnchorPane.bottomAnchor="206.1064453125" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="324.5078125" AnchorPane.topAnchor="115.9599609375">
+                        <font>
+                            <Font name="Times New Roman Bold" size="18.0" />
+                        </font>
+                    </Text>
+
+                    <ButtonBar layoutX="209.0" layoutY="241.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="213.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="218.0" AnchorPane.topAnchor="241.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+
+                        <buttons>
+                            <Button fx:id="login" lineSpacing="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="197.0" text="Log In">
+                                <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                </padding>
+                            </Button>
+                        </buttons>
+                    </ButtonBar>
+                </AnchorPane>
+
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                </padding>
+
+                <effect>
+                    <DropShadow blurType="GAUSSIAN" />
+                </effect>
+            </VBox>
+
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </AnchorPane>
+    </VBox>
+</AnchorPane>
